@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Умный холодильник Smart X | DomTech</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="../index.html">DomTech</a>
+        </div>
+        <nav>
+            <a href="category.html">Каталог</a>
+            <a href="cart.html" class="cart-icon">Корзина (0)</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="product-page">
+            <div class="product-gallery">
+                <img src="../img/fridge.jpg" alt="Умный холодильник Smart X">
+            </div>
+            
+            <div class="product-details">
+                <h1>Умный холодильник Smart X</h1>
+                <div class="price">45 000 ₽</div>
+                
+                <button class="btn" onclick="addToCart('Умный холодильник Smart X', 45000, '../img/fridge.jpg')" style="margin-bottom: 15px;">Добавить в корзину</button>
+                <button class="btn" style="background: var(--white); color: var(--dark); border: 2px solid var(--dark);">Купить в 1 клик</button>
+
+                <div class="specs">
+                    <h3>Характеристики</h3>
+                    <ul>
+                        <li>Общий объем: <span>350 л</span></li>
+                        <li>Тип управления: <span>Сенсорный</span></li>
+                        <li>Wi-Fi: <span>Есть</span></li>
+                        <li>Гарантия: <span>3 года</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2026 DomTech.
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>
