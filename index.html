@@ -15,7 +15,6 @@
         </nav>
     </header>
 
-    <!-- ЭКРАН 1: ГЛАВНАЯ -->
     <div class="container" id="screen-home">
         <div style="text-align: center; margin-bottom: 50px; margin-top: 20px;">
             <h1 style="font-size: 48px; margin-bottom: 15px;">Техника, которая вписывается в твой стиль</h1>
@@ -27,7 +26,7 @@
                 <img src="fridge.jpg" alt="Холодильник">
                 <h3>Умный холодильник Smart X</h3>
                 <div class="price">45 000 ₽</div>
-                <button class="btn" onclick="showProduct('Холодильник Smart X', 45000, 'fridge.jpg', '350 л', 'Сенсорный')">Смотреть</button>
+                <button class="btn" onclick="showProduct('Умный холодильник Smart X', 45000, 'fridge.jpg', '350 л', 'Сенсорный')">Смотреть</button>
             </div>
             <div class="card">
                 <img src="washer.jpg" alt="Стиральная машина">
@@ -39,7 +38,7 @@
                 <img src="microwave.jpg" alt="Микроволновка">
                 <h3>Микроволновая печь HeatWave</h3>
                 <div class="price">8 500 ₽</div>
-                <button class="btn" onclick="showProduct('Микроволновка HeatWave', 8500, 'microwave.jpg', '20 л', 'Механический')">Смотреть</button>
+                <button class="btn" onclick="showProduct('Микроволновая печь HeatWave', 8500, 'microwave.jpg', '20 л', 'Механический')">Смотреть</button>
             </div>
             <div class="card">
                 <img src="vacuum.jpg" alt="Пылесос">
@@ -50,16 +49,14 @@
         </div>
     </div>
 
-    <!-- ЭКРАН 2: КАТАЛОГ -->
     <div class="container hidden" id="screen-catalog">
         <h1 style="margin-bottom: 30px; font-size: 36px;">Все товары</h1>
         <div class="grid">
-            <!-- Дублируем карточки для каталога -->
             <div class="card">
                 <img src="fridge.jpg" alt="Холодильник">
                 <h3>Умный холодильник Smart X</h3>
                 <div class="price">45 000 ₽</div>
-                <button class="btn" onclick="showProduct('Холодильник Smart X', 45000, 'fridge.jpg', '350 л', 'Сенсорный')">Смотреть</button>
+                <button class="btn" onclick="showProduct('Умный холодильник Smart X', 45000, 'fridge.jpg', '350 л', 'Сенсорный')">Смотреть</button>
             </div>
             <div class="card">
                 <img src="washer.jpg" alt="Стиральная машина">
@@ -67,10 +64,21 @@
                 <div class="price">32 000 ₽</div>
                 <button class="btn" onclick="showProduct('Стиральная машина Aqua Pro', 32000, 'washer.jpg', '8 кг', 'Электронный')">Смотреть</button>
             </div>
+            <div class="card">
+                <img src="microwave.jpg" alt="Микроволновка">
+                <h3>Микроволновая печь HeatWave</h3>
+                <div class="price">8 500 ₽</div>
+                <button class="btn" onclick="showProduct('Микроволновая печь HeatWave', 8500, 'microwave.jpg', '20 л', 'Механический')">Смотреть</button>
+            </div>
+            <div class="card">
+                <img src="vacuum.jpg" alt="Пылесос">
+                <h3>Робот-пылесос CleanBot</h3>
+                <div class="price">25 000 ₽</div>
+                <button class="btn" onclick="showProduct('Робот-пылесос CleanBot', 25000, 'vacuum.jpg', '0.5 л', 'Приложение')">Смотреть</button>
+            </div>
         </div>
     </div>
 
-    <!-- ЭКРАН 3: ТОВАР -->
     <div class="container hidden" id="screen-product">
         <div class="product-page">
             <div class="product-gallery">
@@ -93,11 +101,10 @@
         </div>
     </div>
 
-    <!-- ЭКРАН 4: КОРЗИНА -->
     <div class="container hidden" id="screen-cart">
         <h1 style="margin-bottom: 30px; font-size: 36px;">Ваша корзина</h1>
         <div style="display: flex; gap: 40px; align-items: flex-start; flex-wrap: wrap;">
-            <div id="cart-items" style="flex: 2; min-width: 300px;"></div>
+            <div id="cart-items" style="flex: 2; min-width: 300px; display: flex; flex-direction: column; gap: 15px;"></div>
             <div class="specs" style="flex: 1; min-width: 280px; margin-top: 0; background: var(--white);">
                 <h3 style="font-size: 22px; margin-bottom: 20px;">Итого</h3>
                 <div style="display: flex; justify-content: space-between; margin-bottom: 15px; font-size: 18px;">
